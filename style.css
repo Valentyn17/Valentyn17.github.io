@@ -1,0 +1,102 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    }
+#border1 {
+    width: 100%;
+    height: 752px;
+}    
+#Header {
+    width: 100%;
+    height: 20%;
+    background-color: #00bfff;
+}
+.main {
+width: 100%;
+height: 65%;   
+}
+#footer{
+    width: 100%;
+    height: 15%;
+    background-color: #00bfff;
+}
+#whiteblock1 {
+    width: 15%;
+    float: left;
+    height: 50%;
+    margin: 38px 10px;
+    background-color: white;
+}
+#title1{
+    float: right;
+    height: 50%;
+    margin: 38px 15px;
+}
+.logo{
+    float: right;
+    margin-right: 5px;
+}
+#whiteblock2 {
+    width: 15%;
+    float: left;
+    height: 50%;
+    margin: 28px 10px;
+    background-color: white;
+}
+#title2{
+    float: right;
+    height: 50%;
+    clear: right;
+    margin: 28px 15px;
+}
+.leftblock {
+    float: left;
+    width: 20%;
+    height: 90%;
+    clear: left;
+    background-color: orange; 
+}
+.centreblock {
+    float: left;
+    width: 55%;
+    height: 90%;
+    background-color: white;
+} 
+.rightblock{
+    float: right;
+    width: 25%;
+    height: 100%;    
+    background-color: orange; 
+}
+.bottomblock{
+    float: left;
+    width: 75%;
+    height: 10%;
+    background-color: #52cc00;
+}
+.content{
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: 20%;
+}
+.content1{
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.menu{
+    float: right;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 15px;
+    clear:left;
+    clear: right;
+}
+#menu{
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: 20%;
+}
