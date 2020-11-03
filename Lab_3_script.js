@@ -89,6 +89,9 @@ content.addEventListener('mouseover', changing);
 content.addEventListener('mouseout', changing2);
 }
 
+
+
+
 window.addEventListener('load', load_cursive);
 function load_cursive()
 {
@@ -109,16 +112,32 @@ function task4()
   }
 }
 
+
+function isHTML(str) {
+  return /<(br|basefont|hr|input|source|frame|param|area|meta|!--|col|link|option|base|img|wbr|!DOCTYPE).*?>|<(a|abbr|acronym|address|applet|article|aside|audio|b|bdi|bdo|big|blockquote|body|button|canvas|caption|center|cite|code|colgroup|command|datalist|dd|del|details|dfn|dialog|dir|div|dl|dt|em|embed|fieldset|figcaption|figure|font|footer|form|frameset|head|header|hgroup|h1|h2|h3|h4|h5|h6|html|i|iframe|ins|kbd|keygen|label|legend|li|map|mark|menu|meter|nav|noframes|noscript|object|ol|optgroup|output|p|pre|progress|q|rp|rt|ruby|s|samp|script|section|select|small|span|strike|strong|style|sub|summary|sup|table|tbody|td|textarea|tfoot|th|thead|time|title|tr|track|tt|u|ul|var|video).*?<\/\2>/.test(
+    str
+  );
+}
+
 let text2=document.querySelector(".content1");
 function Load_Text_2() {
-    if(localStorage.text_2){
-      text2.innerHTML += localStorage.text_2 + "\n";
+ if (localStorage.text_2)
+ {
+    if(isHTML(localStorage.text_2))
+    {
+      text2.innerHTML+=localStorage.text_2; 
     }
     else
     {
-       text2.innerHTML=text_content2.innerHTML;
+      text2.innerText += localStorage.text_2 + "\n";
     }
-  }
+ }
+ else
+ {
+  text2.innerHTML=text_content2.innerHTML;
+ }
+}
+
 
   window.addEventListener('load', Load_Text_2);
 
@@ -127,7 +146,13 @@ function Load_Text_2() {
 let text=document.querySelector(".content1_main");
 function Load_Text_3() {
     if(localStorage.text_3){
-      text.innerHTML += localStorage.text_3 + "\n";
+      if(isHTML(localStorage.text_3))
+      {
+
+        text.innerHTML+=localStorage.text_3;
+      }
+      else{
+      text.innerText += localStorage.text_3 + "\n";}
     }
     else
     {
@@ -147,7 +172,7 @@ function task6()
         }
       };
       btnClearText_3.onclick = () => {
-        text.innerHTML=text_content.innerHTML;
+        text.innertext=text_content.innerText;
         localStorage.removeItem('text_3');
         Load_Text_3();
       };
@@ -160,7 +185,7 @@ function task6()
         }
       };
       btnClearText_2.onclick = () => {
-        text2.innerHTML=text_content2.innerHTML;
+        text2.innerText=text_content2.innerText;
         localStorage.removeItem('text_2');
         Load_Text_2();
       };
