@@ -1,0 +1,162 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    }
+.border1 {
+    width: 100%;
+    height: 752px;
+}    
+.Header {
+    width: 100%;
+    height: 20%;
+    background-color: #00bfff;
+}
+.main {
+width: 100%;
+height: 65%;   
+}
+.footer{
+    width: 100%;
+    height: 15%;
+    background-color: #00bfff;
+}
+.X {
+    width: 15%;
+    float: left;
+    height: 50%;
+    margin: 38px 10px;
+    background-color: white;
+}
+.block1 {
+    float: right;
+    height: 50%;
+    margin: 38px 15px;
+    color: black;
+}
+.logo{
+    float: right;
+    margin-right: 5px;
+}
+.Y {
+    width: 15%;
+    float: left;
+    height: 50%;
+    margin: 28px 10px;
+    background-color: white;
+}
+.block6{
+    float: right;
+    height: 50%;
+    clear: right;
+    margin: 28px 15px;
+}
+.leftblock {
+    float: left;
+    width: 20%;
+    height: 85%;
+    clear: left;
+    background-color: orange; 
+}
+.centreblock {
+    float: left;
+    width: 55%;
+    height: 85%;
+    background-color: white;
+    overflow: hidden;
+} 
+.block4{
+    float: right;
+    width: 25%;
+    height: 100%;    
+    background-color: orange; 
+}
+.block5{
+    float: left;
+    width: 75%;
+    height: 15%;
+    background-color: #52cc00;
+    overflow: hidden;
+}
+.content,.content_centre{
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: 5%;
+    width: 100%;
+}
+.content1, .content1_img{
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 15px;
+    
+}
+
+
+
+.content1_main
+{
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.block3
+{
+    width: 100%;
+    height: 50%;
+}
+
+textarea 
+{
+    width: 60px;
+}
+.form_user3
+{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.block3
+{
+    height: 70%;
+}
+#menu
+{
+    margin-left:  10px;
+    float: left;
+    width: 30%;
+    clear: right;
+}
+.menu 
+{
+    float: right;
+    text-align: center;
+   margin-right:  40%;
+
+}
+.git_task{
+width: 100%;
+padding: 10px 25px;
+height: auto;
+display: none;
+margin-top: 1% ;
+margin-left: 2%;
+margin-right: 2%;
+text-align: left;
+overflow-x: auto;
+background-color: white;
+}
+
+.git_task{
+    width: 100%;
+    padding: 10px 25px;
+    height: auto;
+    display: none;
+    margin-top: 1% ;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: left;
+    overflow-x: auto;
+    background-color: red;
+    }
