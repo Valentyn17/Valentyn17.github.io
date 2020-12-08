@@ -1,0 +1,154 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    }
+.border {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows:  75.4px;
+}
+.Header{
+    grid-area: 1/1/3/4;
+    background-color: #00bfff;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);  
+    justify-content: space-between;
+}
+.whiteblock{
+    height: 75px;
+    width: 200px;
+    background-color: white;
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+.title{
+    height: 75px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+.leftblock{
+    grid-area: 3/1/8/2;
+    background-color: orange;
+    text-align: right;
+    justify-items: center;
+    padding-right: 7px;
+}
+.centreblock{
+    grid-area: 3/2/8/3;
+    background-color: white;
+    text-align: right;
+    
+    position: relative;
+}
+.rightblock{
+    grid-area: 3/3/9/4;
+    background-color: orange;
+    text-align: right;
+    padding-right: 7px;
+    padding-top: 50px;
+    overflow-y: auto;
+}
+.bottomblock {
+    grid-area: 8/1/9/3;
+    background-color: #52cc00;
+}
+.footer{
+    grid-area: 9/1/11/4;
+    background-color:  #00bfff;
+    background-color: #00bfff;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);  
+    justify-content: space-between;
+}
+
+.menu{
+    width: 100%;
+    text-align: right;
+    margin-right: 15px;
+    clear:left;
+    float: right;
+    list-style-position: inside;
+}
+
+.event_log{
+    width: 85%;
+    padding: 10px 25px;
+    height: 200px;
+    display: none;
+    margin-top: 1% ;
+    text-align: left;
+    overflow-y: scroll;
+    background-color: white;
+    }
+.anim 
+{
+    background-color: lightgray; 
+    width: calc(100% - 10px);
+    height:calc(100% - 50px);
+    position: absolute; 
+    bottom: 0; 
+    left:0;
+    border: 5px solid orange;
+    background: url("background.jpg") repeat;
+}
+.square1
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left:0;
+    bottom: 50%;
+    background-color: red;
+    transition: all .3s ease-in-out;
+}
+.square2
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    background-color: green;
+    transition: all .3s ease-in-out;
+}
+.moving_square1
+{
+    animation: moving1 4s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: paused;
+}
+@keyframes moving1
+{
+    0% { left: 0; }
+    100% { left: calc(100% - 10px); }
+}
+.moving_square2
+{
+    animation: moving2 4s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: paused;
+}
+@keyframes moving2
+{
+    0% { top: 0; }
+    100% { top: calc(100% - 20px); }
+}
+
+.stop
+{
+    display: none;
+}
+.canvas 
+{
+   background: url("background.jpg") repeat;
+}
+
